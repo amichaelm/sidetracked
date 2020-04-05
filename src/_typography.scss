@@ -1,0 +1,161 @@
+ @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Cedarville+Cursive|DM+Serif+Text|Homemade+Apple|IM+Fell+Double+Pica|IM+Fell+Double+Pica+SC|Montserrat:200i,300,300i,400,400i,500,600,700|Prata&display=swap');
+
+/* //////////////////////////////
+FONT VARIABLES
+////////////////////////////// */
+
+// Amatic SC - similar to original font idea
+
+// Cedarville Cursive - cursive handwriting, maybe for blog paragraphs?
+
+// DM Serif Text - simple serif font w/ strokes
+
+// Homemade Apple - another cursive handwritten font
+
+// IM Fell Double Pica - handwritten Serif maybe for blog paragraphs
+
+// IM Fell Double Pica SC - handwritten all caps Serif, maybe for h1's title
+
+// Montserrat - simple Sans-Serif clean, maybe for blog paragraphs?
+
+// Prata - simple Sans-Serif clean, maybe for blog paragraphs?
+
+
+$font-display: Amatic SC, serif;
+$font-text: Prata, sans-serif;
+$font-para: IM Fell Double Pica;
+
+$heading-1: IM Fell Double Pica SC;
+
+
+
+
+.heading-1, h1 {
+    font-size: 13rem;
+    font-family: $heading-1;
+
+    @include respond(phone) {
+        font-size: 9rem;
+    }
+}
+.heading-2, h2 {
+    font-size: 3.6rem;
+}
+.heading-3, h3 {
+    font-size: 3rem;
+}
+.heading-4, h4 {
+    font-size: 2.3rem;
+    font-family: $font-text;
+    letter-spacing: 1.6px;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 1.6rem;
+}
+.menu-item {
+
+    a {
+        // font-weight: bolder;
+        color: #000;
+        font-family: $font-display;
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* //////////////////////////////
+FRONT-PAGE TYPOGRAPHY
+////////////////////////////// */
+
+.hero {
+
+
+    &__banner {
+
+    }
+
+    &__buttons {
+
+
+        button {
+            letter-spacing: .1rem;
+            
+            p {
+                font-size: 2rem;
+
+                @include respond (phone) {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+
+}
+
+
+/* //////////////////////////////
+FRONT-PAGE TYPOGRAPHY ENDS
+////////////////////////////// */
+
+
+
+
+/* //////////////////////////////
+ARCHIVE / BLOG TYPOGRAPHY
+////////////////////////////// */
+
+.archive {
+
+    &__publish {
+        font-size: 1.1rem;
+        padding: 1rem 0;
+    }
+
+    &__title {
+        font-family: $heading-1;
+        font-weight: lighter;
+        letter-spacing: .6rem;
+    }
+
+    &__post--inside {
+        
+    
+        p {
+            font-family: $font-para;
+            font-weight: 100;
+            font-size: 1.6rem;
+            letter-spacing: .3px;
+            // color: #FFF;
+            text-decoration: none;
+        }
+    }
+
+    &__post--title {
+            font-family: $heading-1;
+            letter-spacing: 1px;
+    }
+
+    &__category {
+        font-family: $font-para;
+        font-size: 1.3rem;
+    }
+
+    
+    &__btn {
+            
+            a {
+                font-family: IM Fell Double Pica SC;
+                letter-spacing: .9px;
+                font-weight: 900;
+                font-size: 2rem;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+}
+
+/* //////////////////////////////
+ARCHIVE TYPOGRAPHY END
+////////////////////////////// */

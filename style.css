@@ -1,0 +1,14 @@
+/* 
+Theme Name: newTheme
+Author: Alex Martinez
+*/
+
+body {
+    background: rgb(214, 214, 214);
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 100px;
+}

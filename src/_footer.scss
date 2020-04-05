@@ -1,0 +1,98 @@
+footer {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    
+    padding: 6rem 9rem;
+    background: $color-gray-dark;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        height: 66vh;
+    }
+
+    @include respond(phone) {
+        height: 80vh;
+    }
+    
+
+    &__navigation {
+
+        @include respond(tab-port) {
+            
+        }
+
+    }
+
+    &__follow {
+
+        @include respond(tab-port) {
+            padding: 9rem auto;
+        }
+    }
+
+    &__ask {
+        @include respond(tab-port) {
+            padding: 9rem auto;
+        }
+    }
+
+    h3 {
+        color: $color-offwhite;
+        font-family: $font-para;
+        font-size: 2.3rem !important;
+        letter-spacing: .3rem;
+        margin-bottom: 1.6rem;
+    }
+
+    ul {
+        list-style-type: square;
+        text-decoration: none;
+
+        li {
+            margin-bottom: 1.3rem;
+            list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    font-family: $font-display;
+                    font-weight: 900;
+                    color: $color-offwhite;
+                    text-transform: uppercase;
+                    letter-spacing: .2rem;
+
+                    &:hover {
+                        transition: .2s ease-in-out;
+                        color: $color-gold;
+                    }
+
+                    .fbSvg {
+                        width: 1.6rem;
+                        margin-right: .6rem;
+                    }
+
+                    .instaSvg {
+                        width: 1.6rem;
+                        margin-right: .6rem;
+                    }
+                    .tumblrSvg {
+                        width: 1.1rem;
+                        margin-right: .6rem;
+                    }
+                    .gmailSvg {
+                        width: 1.6rem;
+                        margin-right: .6rem;
+                    }
+                    .linkedinSvg {
+                        width: 1.6rem;
+                        margin-right: .6rem;
+                    }
+                }
+            }
+        }
+}

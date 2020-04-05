@@ -1,0 +1,28 @@
+////////////////////////////////////////
+// MIXINS BEGIN
+////////////////////////////////////////
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs-phone {
+        @media (max-width: 22.5em) {@content};
+    }
+    @else if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content};
+    }
+    @else if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {@content};
+    }
+    @else if $breakpoint == tab-land {
+        @media (max-width: 75em) {@content};
+    }
+    @else if $breakpoint == card-break {
+        @media (max-width: 91.25em) {@content}; // 1460px / 16
+    }
+    @else if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {@content};
+    }
+}
+
+////////////////////////////////////////
+// MIXINS END
+////////////////////////////////////////
