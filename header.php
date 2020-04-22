@@ -28,7 +28,7 @@
         <nav class="navi__nav">
             <ul class="navi__list">
                 <li class="navi__item"><a href="<?php bloginfo('url');?>" class="navi__link">home</a></li>
-                <li class="navi__item"><a href="http://www.sidetracked.blog/category/archive" class="navi__link">archive</a></li>
+                <li class="navi__item"><a href="http://localhost/sidetracked/archive" class="navi__link">archive</a></li>
                 <li class="navi__item"><a href="http://www.sidetracked.blog" class="navi__link">about</a></li>
             </ul>
         </nav>
