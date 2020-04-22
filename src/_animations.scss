@@ -1,0 +1,72 @@
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+      transform: rotate(60deg);
+  }
+  
+  50% {
+      transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+      transform: rotate(30deg);
+  }
+  
+  50% {
+      transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes snakey {
+    0% {
+        transform: translateX(0rem) translateY(0rem);
+    }
+
+    50% {
+        transform: translateX(.4rem) translateY(.3rem);
+    }
+    
+    100% {
+        transform: translateX(0rem) translateY(0rem);
+    }
+}
+
+@keyframes msgInBottle {
+  0% {
+    transform: translateX(-1rem);
+  }
+
+  25%{
+    transform: translateX(1rem) rotate(-6deg);
+  }
+
+  50% {
+    transform: translateX(-1rem);
+  }
+
+  75% {
+    transform: translateX(1rem) rotate(6deg);
+  }
+  
+
+  100% {
+    transform: translateX(-1rem);
+  }
+  
+}
