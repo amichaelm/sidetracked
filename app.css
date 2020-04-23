@@ -970,15 +970,21 @@ footer {
 .single {
   grid-column: 1/-1;
   grid-row: 2/3;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(10, minmax(6rem, 1fr));
-  grid-template-rows: repeat(12, minmax(4rem, 1fr));
+  grid-template-rows: minmax(auto-fit, 1fr);
   grid-auto-flow: dense;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 6rem 6rem 6rem;
+}
+
+@media (max-width: 37.5em) {
+  .single {
+    grid-column: 1/-1;
+    grid-template-rows: repeat(auto, minmax(6rem, 1fr));
+  }
 }
 
 .single .wp-block-group {
@@ -1011,13 +1017,14 @@ footer {
 
 .single__content {
   grid-column: 1/-1;
-  grid-row: 2/span 4;
+  grid-row: 2;
   padding: 3rem;
 }
 
 @media (max-width: 37.5em) {
   .single__content {
     padding: 0;
+    grid-column: 1/7;
   }
 }
 

@@ -1,11 +1,11 @@
 .single {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    width: 100%;
+    // width: 100%;
     
     display: grid;
     grid-template-columns: repeat(10, minmax(6rem, 1fr));
-    grid-template-rows: repeat(12, minmax(4rem, 1fr));
+    grid-template-rows: minmax(auto-fit, 1fr);
     grid-auto-flow: dense;
 
     background-position: top center;
@@ -15,7 +15,8 @@
     padding: 0 6rem 6rem 6rem;
     
     @include respond(phone) {
-        // padding: 0;
+        grid-column: 1 / -1;
+        grid-template-rows: repeat(auto, minmax(6rem, 1fr));
     }
 
     .wp-block-group {
@@ -40,18 +41,18 @@
         
         @include respond(xs-phone) {
             max-width: 30rem;
-
         }
     }
 
     &__content {
         grid-column: 1 / -1;
-        grid-row: 2 / span 4;
+        grid-row: 2 ;
         
         padding: 3rem;
         
         @include respond(phone) {
             padding: 0;
+            grid-column: 1 / 7;
         }
 
         p {
