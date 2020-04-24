@@ -37,8 +37,6 @@
     justify-content: flex-end;
     width: 2rem;
 
-    
-
     &__checkbox:checked ~ &__background {
            // transform: scale(200);
             width: 100%;
@@ -210,6 +208,10 @@ header {
         display: flex;
         align-self: center;
         padding-left: 6rem;
+
+        @include respond(phone) {
+            padding-left: 4.9rem;
+        }
 
         @include respond(xs-phone) {
             padding-left: 2rem;

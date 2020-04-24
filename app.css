@@ -231,6 +231,12 @@ header .logo-container {
   padding-left: 6rem;
 }
 
+@media (max-width: 37.5em) {
+  header .logo-container {
+    padding-left: 4.9rem;
+  }
+}
+
 @media (max-width: 22.5em) {
   header .logo-container {
     padding-left: 2rem;
