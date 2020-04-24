@@ -26,7 +26,7 @@
 
       <button class="newAdventure">
          <img src="<?php bloginfo('template_directory');?>/images/arrow.svg" class="hero__buttons--svg svg" alt=".">
-            <a href="#">
+            <a href="http://www.sidetracked.blog/?redirect_to=latest">
                <!-- <img src="<?php bloginfo('template_directory');?>/images/axe.svg" class="hero__buttons--svg2" alt="."> -->
                <p>new adventure</p>
             </a>
