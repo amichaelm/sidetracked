@@ -43,7 +43,7 @@
         
         <p class="info__by">
             Website made on 🌎 
-            <a href="amichaelm.github.io">
+            <a href="https://amichaelm.github.io/">
                 byalexm.com
             </a>
         </p>
