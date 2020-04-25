@@ -767,6 +767,7 @@ ARCHIVE TYPOGRAPHY END
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background: #FFFFF7;
 }
 
 .archive__title {

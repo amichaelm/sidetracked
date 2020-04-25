@@ -1,6 +1,6 @@
 <?php get_header();?>
 
-<div class="archive" id="archive" style="background-image: url('<?php bloginfo("template_directory");?>/images/blogBack.svg');">
+<div class="archive" id="archive" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('<?php bloginfo("template_directory");?>/images/mainBackgroundSVG.svg')">
 
 <h1 class="archive__title">All posts</h1>
 
