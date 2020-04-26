@@ -21,14 +21,10 @@
 
 </div>
 
-   <a href="#single">
+   <a class="bownarrowbox" href="#single">
       <img src="<?php bloginfo('template_directory');?>/images/bownarrow.svg" class="archive__bownarrow" alt="a bow n arrow pointing up toward the top of page.">
    </a>
 
 </div>
-
-
-
-
 
 <?php get_footer();?>

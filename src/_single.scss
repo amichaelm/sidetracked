@@ -15,8 +15,11 @@
     padding: 0 6rem 6rem 6rem;
     
     @include respond(phone) {
-        grid-column: 1 / -1;
         grid-template-rows: repeat(auto, minmax(6rem, 1fr));
+    }
+
+    .bownarrowbox {
+        height: 0;
     }
 
     .wp-block-group {

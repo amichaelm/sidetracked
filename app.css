@@ -962,7 +962,7 @@ ARCHIVE TYPOGRAPHY END
   width: 6rem;
   position: fixed;
   bottom: 3rem;
-  right: 4rem;
+  right: 1.3rem;
 }
 
 .archive__bownarrow:hover {
@@ -989,9 +989,12 @@ footer {
 
 @media (max-width: 37.5em) {
   .single {
-    grid-column: 1/-1;
     grid-template-rows: repeat(auto, minmax(6rem, 1fr));
   }
+}
+
+.single .bownarrowbox {
+  height: 0;
 }
 
 .single .wp-block-group {
