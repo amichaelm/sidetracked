@@ -135,9 +135,17 @@ ARCHIVE / BLOG TYPOGRAPHY
             letter-spacing: 1px;
     }
 
-    &__category {
+    &__categories {
         font-family: $font-para;
-        font-size: 1.3rem;
+        // color: $color-gold;
+
+        a {
+            font-size: 2rem !important;
+
+            @include respond(tab-port) {
+                margin-top: 1rem;
+            }
+        }
     }
 
     
