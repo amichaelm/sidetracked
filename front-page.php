@@ -6,7 +6,7 @@
 
 <div class="hero" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('<?php bloginfo("template_directory");?>/images/mainBackgroundSVG.svg')">
 
-   <img src="<?php bloginfo('template_directory');?>/images/bannerLogo.svg" class="hero__banner" alt="Sidetracked worn and teared banner logo.">
+   <img src="<?php bloginfo('template_directory');?>/images/bannerLogo.svg" class="hero__banner" alt="Sidetracked worn and torn banner logo.">
    
    <img src="<?php bloginfo('template_directory');?>/images/compassBackSVG.svg" class="hero__compass1 compass1" alt="gold circular back of compass rotating.">
 
@@ -42,15 +42,7 @@
          <img src="<?php bloginfo('template_directory');?>/images/arrow2.svg" class="hero__buttons--svg svg2" alt=".">
       </button>   
    </div>
-      
-
-   
 </div>
-
-
-
-
-
 
 <?php get_footer();?>
 

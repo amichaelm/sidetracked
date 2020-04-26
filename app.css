@@ -1244,8 +1244,8 @@ footer {
   display: -webkit-box;
   display: flex;
   justify-content: space-around;
-  -webkit-box-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+          align-items: flex-start;
   height: 100%;
   padding: 6rem 9rem;
   background: #333;
@@ -1257,6 +1257,9 @@ footer {
     -webkit-box-direction: normal;
             flex-direction: column;
     height: 66vh;
+    -webkit-box-align: center;
+            align-items: center;
+    text-align: center;
   }
 }
 
@@ -1296,6 +1299,17 @@ footer ul li {
   list-style-type: none;
 }
 
+@media (max-width: 37.5em) {
+  footer ul li {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+}
+
 footer ul li a {
   text-decoration: none;
   font-size: 1.6rem;
@@ -1304,6 +1318,12 @@ footer ul li a {
   color: #FFFFF7;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+}
+
+@media (max-width: 37.5em) {
+  footer ul li a {
+    text-align: center;
+  }
 }
 
 footer ul li a:hover {
